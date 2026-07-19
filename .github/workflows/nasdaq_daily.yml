@@ -2,9 +2,8 @@ name: Daily NASDAQ Breadth & RS
 
 on:
   schedule:
-    # Runs everyday at 12:00 UTC (7:00 AM EST)
     - cron: '0 12 * * *'
-  workflow_dispatch: # Lets you trigger it manually from the Actions UI
+  workflow_dispatch:
 
 jobs:
   run-nasdaq-pipeline:
